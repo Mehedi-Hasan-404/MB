@@ -2,10 +2,10 @@ name: Build Debug APK
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]       # <--- CHANGED FROM 'main' TO 'master'
   pull_request:
-    branches: [ "main" ]
-  workflow_dispatch: # Allows you to trigger the build manually from the Actions tab
+    branches: [ "master" ]       # <--- CHANGED FROM 'main' TO 'master'
+  workflow_dispatch:
 
 jobs:
   build:
